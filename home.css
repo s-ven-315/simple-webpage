@@ -229,6 +229,21 @@ nav a{
     margin-top: 30px;
 }
 
+.about-container {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+
+.about-container h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 footer {
     background-color: #E9AFA3;
     display: flex;
