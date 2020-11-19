@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Kingdom</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="#">LOGO</a>
+        </div>
+        <div class="nav-right">
+            <a href="#about-us">About Us</a>
+            <a>Grooming</a>
+            <a>Shop</a>
+            <a href="#contact">Contact Us</a>
+            <button class="book">BOOK NOW</button>
+        </div>
+        <div class="nav-hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="dropdown-content">
+                <div class="dropdown-content-menu">
+                    <a href="#about-us">About Us</a>
+                    <a>Grooming</a>
+                    <a>Shop</a>
+                    <a href="#contact">Contact Us</a>
+                    <button class="book">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="banner-img">
+            <img src="puppy.jpg" />
+        </div>
+        <div class="banner-title">
+            <h1>Town's Best <br />One-Stop-Services<br />For Pet</h1>
+            <button class="book">Book Now</button>
+        </div>
+    </div>
+    <div class="service">
+        <div class="service-title">
+            <h1>Our Service</h1>
+        </div>
+        <div class="service-container">
+            <div class="service-container-inner">
+                <i class="fas fa-paw"></i>
+                <div class="service-content">
+                    <div class="service-content-body">
+                        <h2>Pet Grooming</h2>
+                        <p>We provide both in-store visiting grooming and mobile pet grooming. Mobile pet grooming, in
+                            other
+                            word, we groom your pet at your doorstep so that you can save time. </p>
+                        <button>Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <img src="dog.png" />
+                </div>
+            </div>
+            <div class="service-container-inner">
+                <i class="fas fa-shopping-bag"></i>
+                <div class="service-content">
+                    <div class="service-content-body">
+                        <h2>Pet Supply</h2>
+                        <p>Our online and offline store stocks a wide variety of products to satisfy your pet needs. We
+                            offer best quality product at best prices.</p>
+                        <button>Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <img src="cat.png" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about-us" class="about">
+        <div class="about-title">
+            <h1>About Us</h1>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div id="contact" class="contact">
+                <h3>Contact Us</h3>
+                <button class="message"><i class="fas fa-paper-plane"></i> Send us a message!</button>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <div class="footer-services-list">
+                    <a>About Us</a>
+                    <a>Grooming</a>
+                    <a>Shop</a>
+                    <a>Contact Us</a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>Sign Up for Our Newsletter</h3>
+                <form>
+                    <input class="email" type="email" placeholder="Enter your email address" />
+                    <input class="submit" type="submit" />
+                </form>
+                <small>Sign up to get the latest on sales, new releases and more</small>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy Made by <bold>Sin Ven</bold> for personal reference</span>
+        </div>
+    </footer>
+    <div class="book-modal">
+        <div class="book-modal-content">
+            <div class="book-modal-content-header">
+                <h3 class="book-modal-title">Grooming Booking</h3>
+                <button type="button" class="book-modal-close"><span>&times;</span></button>
+            </div>
+            <div class="book-modal-body">
+                <form>
+                    <input class="name" type="text" placeholder="Your name" />
+                    <input class="phone" type="text" placeholder="Your phone number" />
+                    <input class="email" type="email" placeholder="Your email" />
+                    <label>Date</label>
+                    <input type="date" />
+                    <label>Time</label>
+                    <input type="time" />
+                    <input class="submit" type="submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="message-modal">
+        <div class="message-modal-content">
+            <div class="message-modal-content-header">
+                <h3 class="message-modal-title">Contact Form</h3>
+                <button type="buton" class="message-modal-close"><span>&times;</span></button>
+            </div>
+            <div class="message-modal-body">
+                <form>
+                    <input class="name" type="text" placeholder="Your name" />
+                    <input class="email" type="email" placeholder="Your email" />
+                    <textarea cols="40" rows="5" placeholder="Your message for us"></textarea>
+                    <input class="submit" type="submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+    <div class="go-to-top"><i class="fas fa-chevron-up"></i></div>
+</body>
+<script>
+    let bookModal = $(".book-modal")
+    let background = $(".modal-background")
+    let bookBtn = $(".book")
+    let bookClose = $(".book-modal-close")
+    let messageModal = $(".message-modal")
+    let messageBtn = $(".message")
+    let messageClose = $(".message-modal-close")
+    bookBtn.on("click", function () {
+        background.show()
+        bookModal.show()
+        $("body").css("overflow", "hidden")
+    })
+    bookClose.on("click", function () {
+        bookModal.fadeOut(200)
+        background.fadeOut(200)
+        $("body").css("overflow", "overlay")
+    })
+    messageBtn.on("click", function () {
+        background.show()
+        messageModal.show()
+        $("body").css("overflow", "hidden")
+    })
+    messageClose.on("click", function () {
+        messageModal.fadeOut(200)
+        background.fadeOut(200)
+        $("body").css("overflow", "overlay")
+    })
+    background.on("click", function () {
+        bookModal.fadeOut(200)
+        messageModal.fadeOut(200)
+        background.fadeOut(200)
+        $("body").css("overflow", "overlay")
+    })
+
+    let scrollTopBtn = $(".go-to-top")
+    scrollTopBtn.on("click", function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    })
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            scrollTopBtn.show()
+        }
+        else {
+            scrollTopBtn.hide()
+        }
+    })
+
+    let dropdownBtn = $(".nav-hamburger")
+    dropdownBtn.on("click", function () {
+        $(".dropdown-content").toggle()
+    })
+
+</script>
+
+</html>

@@ -1,0 +1,558 @@
+body {
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-y: overlay;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2rem;
+    height: 3rem;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    text-transform: uppercase;
+}
+
+.nav-right {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: inherit
+}
+
+.nav-right a:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background-color: #E9AFA3;
+    transition: width 0.2s;
+}
+
+.nav-right a:hover:after {
+    width: 100%
+}
+
+
+.nav-right .book {
+    background-color: #E9AFA3;
+    border: none;
+    height: 2.5rem;
+    width: 7rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: 0
+}
+
+.nav-right .book:hover {
+    background-color: #90323D;
+}
+
+.banner-img {
+    position: relative
+}
+
+.banner-img span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-2rem) translateX(7rem);
+    font-size: small;
+    color: grey
+}
+
+.banner img{
+    width: 80vw;
+    height: auto;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+}
+
+.banner-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    justify-content: center;
+    transform: translateX(-150px);
+}
+
+.banner-title button{
+    border: 3px#E9AFA3 solid;
+    background-color: transparent;
+    color: #E9AFA3;
+    height: 3rem;
+    width: 8rem;
+    margin: 0 auto;
+    transition: 0.3s;
+    outline: 0
+
+}
+
+.banner-title button:hover{
+    border: 3px#E9AFA3 solid;
+    background-color:#E9AFA3;
+    color: white;
+    height: 3rem;
+    width: 8rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.service, .about {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-title, .about-title {
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+.service-title h1:before, .service-title h1:after, .about-title h1:before, .about-title h1:after {
+    content: "";
+    display: inline-block;
+    background: #E9AFA3;
+    position: relative;
+    top: -6px;
+    width: 32px;
+    height: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.service-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-container-inner {
+    border: 3px solid #E9AFA3;
+    width: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-paw, .fa-shopping-bag {
+    position: absolute;
+    font-size: 2em;
+    background-color: white;
+    padding: 15px; 
+    border: 3px solid #E9AFA3;
+    border-radius: 50%;
+    transform: translateY(-2rem);
+    color: tomato;
+}
+.fa-shopping-bag {
+    padding-left: 17px;
+    padding-right: 17px
+}
+
+.service-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+.service-content-body {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service-content-body h2{
+    text-transform: uppercase;
+    color: #E9AFA3;
+}
+.service-content-body p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.service-content-body button{
+    border: 3px #E9AFA3 solid;
+    background-color: transparent;
+    height: 3rem;
+    width: 8rem;
+    margin: 0 auto;
+    transition: 0.3s;
+    color: #E9AFA3;
+    outline: 0
+}
+.service-content-body button:hover{
+    color: white;
+    background-color: #E9AFA3;
+    cursor: pointer;
+}
+
+.service-content img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.about {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #E9AFA3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    color: white;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    display: flex;
+}
+
+footer>div{
+    flex: 1;
+}
+
+footer h3 {
+    text-decoration: underline;
+    text-underline-position: under
+}
+
+
+.contact h4 {
+    color: #90323D;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.newsletter, .contact{
+    flex: 1;
+    text-align: center;
+}
+
+.newsletter form input {
+    height: 3rem;
+    border: none;
+    caret-color: #90323D;
+}
+
+.newsletter form input:focus {
+    outline: 0
+}
+.newsletter .submit {
+    background-color:white;
+    color: #90323D;
+    transition: 0.3s;
+    font-weight: 700;
+}
+.newsletter form .submit:hover {
+    background-color: #90323D;
+    color: white;
+    cursor: pointer;
+
+}
+.newsletter .email {
+    width: 60%
+}
+
+.contact>button {
+    background-color: white;
+    height: 3rem;
+    color: #90323D;
+    outline: 0;
+    border: none;
+    transition: 0.3s
+}
+.contact>button:hover{
+    cursor: pointer;
+    background-color: #90323D;
+    color: white;
+}
+
+
+.footer-services {
+    text-align: center;
+}
+
+.footer-services-list>a:hover {
+    color: #90323D;
+}
+
+.footer-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+}
+.footer-services-list>a {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    flex: 1 1 50%;
+}
+
+.footer-bottom {
+    margin: auto;
+    padding-bottom: 10px;
+    color: #90323D;
+    font-size: 0.7rem
+}
+
+.book-modal, .message-modal {
+    display: none;
+    position: fixed;
+    z-index: 110;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: auto;
+    width: 40vw;
+    color: #E9AFA3;
+    background-color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    animation-name: modalanimate;
+    animation-duration: 0.5s;
+    border: 2px #90323D solid;
+}
+
+@keyframes modalanimate {
+    from {top: -300px; opacity: 0}
+    tp {top: 0; opacity:1}
+}
+
+.book-modal-content-header, .message-modal-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-modal-content-header button, .message-modal-content-header button {
+    height: 30px;
+    background-color: transparent;
+    border: none
+}
+.book-modal-content-header button:focus, .message-modal-content-header button:focus {
+    outline: none;
+}
+.book-modal-content-header button:hover, .message-modal-content-header button:hover {
+    cursor: pointer;
+}
+
+.book-modal-content-header button span, .message-modal-content-header button span {
+    font-size: 2rem;
+    color: #E9AFA3
+}
+
+.book-modal-body form, .message-modal-body form {
+    display: flex;
+    flex-direction: column;
+}
+.book-modal-body form input, .message-modal-body form input {
+    height: 2rem;
+    border: 1px #E9AFA3 solid;
+    margin-bottom: 5px;
+}
+.book-modal-body form input:focus, .message-modal-body form input:focus, textarea:focus {
+    outline: 0
+}
+
+.book-modal-body form .submit, .message-modal-body form .submit {
+    background-color:#E9AFA3;
+    color: white;
+    transition: 0.3s;
+    font-weight: 700;
+    width: 70px;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 25px
+}
+.book-modal-body form .submit:hover, .message-modal-body form .submit:hover {
+    background-color: #90323D;
+    color: white;
+    cursor: pointer;
+
+}
+
+.modal-background {
+    display: none;
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.go-to-top {
+    display: none;
+    z-index: 5;
+    background-color: #90323D;
+    color: white;
+    font-size:1.5rem;
+    border-radius: 50%;
+    padding: 6px;
+    padding-left: 11px;
+    padding-right: 11px;
+    position: fixed;
+    bottom:1rem;
+    right: 2rem;
+}
+
+.go-to-top {
+    cursor: pointer
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right:0;
+    top: 40px;
+    width: 160px;
+    height: 200px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 1s
+}
+
+.dropdown-content-menu {
+    padding: 10px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-hamburger {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-content-menu>button{
+    background-color: #E9AFA3;
+    height: 2rem;
+    border: none;
+    font-weight: 700;
+    color: white;
+}
+
+.dropdown-content-menu>a:hover {
+    background-color: #E9AFA3;
+    color: white
+}
+
+.dropdown-content-menu>button:hover {
+    background-color: #90323D;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-right {
+        display: none
+    }
+    .nav-hamburger> div:not(:last-child){
+        width: 30px;
+        height: 4px;
+        background-color: #E9AFA3;
+        margin: 4px 0;
+    }
+    .banner-img {
+        display: none;
+    }
+    .banner-title {
+        text-transform: uppercase;
+        position: static;
+        transform: none;
+        padding: 50px 0px;
+        background-color: #f9f9f9;
+        width: 100%;
+    }
+    .banner-title button {
+        background-color: #E9AFA3;
+        color: white;
+    }
+    .service-container {
+        display: block;
+    }
+    .service-container img {
+        display: none;
+    }
+    .service-container-inner {
+        width: auto;
+        left: 0;
+        right: 0;
+        margin: auto 10px;
+        margin-top: 50px;
+    }
+    .service-container button {
+        margin-bottom: 10px;
+        background-color: #E9AFA3;
+        color: white;
+    }
+    .footer-top {
+        display: block;
+    }
+    .footer-top button, .newsletter form .submit {
+        background-color: #90323D;
+        color: white;
+    }
+    .footer-top {
+        padding: 0px;
+        padding-bottom: 15px;
+    }
+    .footer-services-list {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .service-container-inner {
+        left: 0;
+        right: 0;
+        width: 350px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-hamburger {
+        display: none
+    }
+}
