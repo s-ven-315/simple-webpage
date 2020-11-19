@@ -1,5 +1,6 @@
 # simple-webpage
-Disclaimer: This is not a functional webpage
+Disclaimer: This is not a functional webpage.
+
 A simple webpage created by using html, css and javascript.
 
 You can take a look of the webpage in the following netlify link
